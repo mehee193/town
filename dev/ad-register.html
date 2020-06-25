@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="wrap">
+        <div class="header__inner header__txt d-flex">
+            <a href="" class="btn btn-close d-flex">닫기</a>
+            <div class="header__tit">광고등록</div>
+        </div>
+    </div>
+</header>
+<div class="container nofooter">
+    <div class="ad-register">
+        <div class="section sec1">
+            <div class="wrap">
+                <div class="join__form form">
+                    <form action="">
+                        <div class="form__row">
+                            <div class="form__tit">카테고리</div>
+                            <div class="inp inp-select">
+                                <select name="" id="">
+                                    <option value="">선택해주세요</option>
+                                    <option value="">선택해주세요</option>
+                                    <option value="">선택해주세요</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">지역확인</div>
+                            <div class="inp inp-radio d-flex">
+                                <label for="g1">
+                                    <input type="radio" name="gender0" id="g1" checked>
+                                    <span>YES</span>
+                                </label>
+                                <label for="g2">
+                                    <input type="radio" name="gender0" id="g2">
+                                    <span>NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">내용입력</div>
+                            <div class="inp inp-textarea">
+                                <textarea placeholder="입력해주세요"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section sec2">
+            <div class="wrap">
+                <div class="form ad-register__form">
+                    <form action="">
+                        <div class="form__row">
+                            <div class="inp inp-checkbox">
+                                <label for="c1" class="d-flex">
+                                    <div class="form__tit">신용카드</div>
+                                    <input type="radio" name="c0" id="c1">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="inp inp-checkbox">
+                                <label for="c2" class="d-flex">
+                                    <div class="form__tit">계좌이체</div>
+                                    <input type="radio" name="c0" id="c2">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="payment-amount d-flex">
+                    <div class="payment-amount__tit">금액</div>
+                    <div class="payment-amount__num d-flex">
+                        <span class="price">￦15,000</span>
+                        <span class="won">원</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="btnBox">
+            <div class="wrap">
+                <a href="" class="btn btn-link d-flex">결제</a>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

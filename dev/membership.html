@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="wrap">
+        <div class="header__inner header__txt d-flex">
+            <a href="" class="btn btn-close d-flex">닫기</a>
+            <div class="header__tit">회원정보</div>
+        </div>
+    </div>
+</header>
+<!-- popup -->
+<div class="popup-wrapper">
+    <div class="popup-bg"></div>
+    <div class="popup">
+        <div class="popup__txtBox">
+            <div class="popup__tit d-flex">
+                귀하의 등급은 
+                <span class="rating">- - - -</span>
+                입니다
+            </div>
+            <div class="popup__txt">
+                내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내
+            </div>
+        </div>
+        <div class="popup__btnBox d-flex">
+            <a href="" class="popup__btn d-flex cancel">취소</a>
+            <a href="" class="popup__btn d-flex">확인</a>
+        </div>
+    </div>
+</div>
+
+<div class="container nofooter">
+    <div class="membership">
+        <div class="section sec1">
+            <div class="wrap">
+                <div class="membership__rating d-flex">
+                    <div class="tit">등급</div>
+                    <a href="" class="btn btn-switch d-flex">전환하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="section sec2">
+            <div class="wrap">
+                <div class="join__form form">
+                    <form action="">
+                        <div class="form__row">
+                            <div class="form__tit">ID</div>
+                            <div class="inp inp-input">
+                                <input type="text" placeholder="입력해주세요">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">이름</div>
+                            <div class="inp inp-input">
+                                <input type="text" placeholder="입력해주세요">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">비밀번호</div>
+                            <div class="inp inp-input">
+                                <input type="password" placeholder="비밀번호 변경">
+                            </div>
+                            <div class="inp inp-input">
+                                <input type="password" placeholder="비밀번호 확인">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">성별</div>
+                            <div class="inp inp-radio d-flex">
+                                <label for="g1">
+                                    <input type="radio" name="gender0" id="g1" checked>
+                                    <span>여자</span>
+                                </label>
+                                <label for="g2">
+                                    <input type="radio" name="gender0" id="g2">
+                                    <span>남자</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">이메일</div>
+                            <div class="inp inp-input">
+                                <input type="text" placeholder="입력해주세요">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">주소</div>
+                            <div class="inp inp-input">
+                                <input type="text" placeholder="입력해주세요">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <a href="" class="btn btn-link d-flex">등록하기</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

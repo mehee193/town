@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header header--bn">
+    <div class="wrap">
+        <div class="header__inner header__txt d-flex">
+            <a href="" class="btn btn-close d-flex">닫기</a>
+            <div class="header__tit">전단지 등록하기</div>
+        </div>
+    </div>
+</header>
+<div class="container nofooter">
+    <div class="leaflet">
+        <div class="section sec1">
+            <div class="wrap">
+                <div class="leaflet__form form">
+                    <form action="">
+                        <div class="form__row form__row--date">
+                            <div class="form__tit">업로드기간 (필수)</div>
+                            <div class="inp inp-input d-flex">
+                                <div class="col">
+                                    <input type="date" placeholder="" id="currentDate">
+                                </div>
+                                <span class="hyphen">-</span>
+                                <div class="col">
+                                    <input type="date" placeholder="" id="currentDate2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">사진</div>
+                            <div class="inp inp-input inp-file">
+                                <label for="f1">
+                                    <input type="file" placeholder="" class="file-upload" id="f1">
+                                    <span class="upload-name">입력해주세요</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section sec2">
+            <div class="section__head">
+                <div class="wrap d-flex">
+                    <div class="section__tit small">히트상품</div>
+                </div>
+            </div>
+            <div class="section__body">
+                <div class="wrap">
+                    <div class="form">
+                        <form action="">
+                            <div class="inp inp-fileBox d-flex">
+                                <label for="imgInput">
+                                    <input type="file" name="" id="imgInput">
+                                    <span></span>
+                                    <img src="#" alt="" id="imgSection" class="imgSection">
+                                </label>
+                                <label for="imgInput">
+                                    <input type="file" name="" id="imgInput">
+                                    <span></span>
+                                    <img src="#" alt="" id="imgSection" class="imgSection">
+                                </label>
+                                <label for="imgInput">
+                                    <input type="file" name="" id="imgInput">
+                                    <span></span>
+                                    <img src="#" alt="" id="imgSection" class="imgSection">
+                                </label>
+                                <label for="imgInput">
+                                    <input type="file" name="" id="imgInput">
+                                    <span></span>
+                                    <img src="#" alt="" id="imgSection" class="imgSection">
+                                </label>
+                                <label for="imgInput">
+                                    <input type="file" name="" id="imgInput">
+                                    <span></span>
+                                    <img src="#" alt="" id="imgSection" class="imgSection">
+                                </label>
+                                <label for="imgInput">
+                                    <input type="file" name="" id="imgInput">
+                                    <span></span>
+                                    <img src="#" alt="" id="imgSection" class="imgSection">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec3">
+            <div class="wrap">
+                <div class="leaflet__form form">
+                    <form action="">
+                        <div class="form__row">
+                            <div class="form__tit">내용입력</div>
+                            <div class="inp inp-textarea">
+                                <textarea placeholder="입력해주세요"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btnBox">
+            <div class="wrap">
+                <a href="" class="btn btn-link d-flex">업로드</a>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="wrap">
+        <div class="header__inner header__txt d-flex">
+            <a href="" class="btn btn-close d-flex">닫기</a>
+            <div class="header__tit">사업자 전환</div>
+        </div>
+    </div>
+</header>
+<div class="container nofooter">
+    <div class="business-register">
+        <div class="wrap">
+            <div class="business__form form">
+                <form action="">
+                    <div class="form__row">
+                        <div class="form__tit">사업자명</div>
+                        <div class="inp inp-input">
+                            <input type="text" placeholder="입력해주세요">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__tit">사업자번호</div>
+                        <div class="inp inp-input">
+                            <input type="text" placeholder="입력해주세요">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__tit">연락처</div>
+                        <div class="form__txt d-flex">
+                            <div class="inp inp-input">
+                                <input type="password" placeholder="입력해주세요">
+                            </div>
+                            <a href="" class="btn btn-interlock d-flex">연동</a>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__tit">가게번호(선택)</div>
+                        <div class="inp inp-input">
+                            <input type="text" placeholder="입력해주세요">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__tit">가게이름</div>
+                        <div class="inp inp-radio d-flex">
+                            <label for="s1" class="d-flex">
+                                <input type="radio" name="store0" id="s1" checked>
+                                <span></span>사업자명
+                            </label>
+                            <label for="s2" class="d-flex">
+                                <input type="radio" name="store0" id="s2">
+                                <span></span>직접입력
+                            </label>
+                        </div>
+                        <div class="form__txt d-flex">
+                            <div class="inp inp-input">
+                                <input type="password" placeholder="입력해주세요">
+                            </div>
+                            <a href="" class="btn btn-check d-flex">중복확인</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="btnBox">
+                <a href="" class="btn btn-link d-flex">등록하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

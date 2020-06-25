@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="wrap">
+        <div class="header__inner header__txt d-flex">
+            <a href="" class="btn btn-close d-flex">닫기</a>
+            <div class="header__tit">광고등록</div>
+        </div>
+    </div>
+</header>
+<div class="container nofooter">
+    <div class="ad-register ad-register--modify">
+        <div class="section sec1">
+            <div class="wrap">
+                <div class="join__form form">
+                    <form action="">
+                        <div class="form__row">
+                            <div class="form__tit">지역확인</div>
+                            <div class="inp inp-radio d-flex">
+                                <label for="g1">
+                                    <input type="radio" name="gender0" id="g1" checked>
+                                    <span>YES</span>
+                                </label>
+                                <label for="g2">
+                                    <input type="radio" name="gender0" id="g2">
+                                    <span>NO</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- yes 선택시 -->
+                        <div class="form__row">
+                            <div class="inp inp-radio d-flex">
+                                <label for="k1" class="flex-1">
+                                    <input type="radio" name="k0" id="k1" checked>
+                                    <span>1km</span>
+                                </label>
+                                <label for="k2" class="flex-1">
+                                    <input type="radio" name="k0" id="k2">
+                                    <span>5km</span>
+                                </label>
+                                <label for="k3" class="flex-1">
+                                    <input type="radio" name="k0" id="k3" checked>
+                                    <span>10km</span>
+                                </label>
+                                <label for="k4" class="flex-1">
+                                    <input type="radio" name="k0" id="k4">
+                                    <span>15km</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- no 선택시 -->
+                        <div class="default-settingMessage">
+                            기본적으로 5km 한정으로 노출됩니다.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="btnBox">
+            <div class="wrap">
+                <a href="" class="btn btn-link d-flex">등록</a>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

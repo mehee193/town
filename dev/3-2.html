@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="wrap">
+        <div class="header__inner header__txt d-flex">
+            <a href="" class="btn btn-close d-flex">닫기</a>
+            <div class="header__tit">내가 올린 광고</div>
+        </div>
+    </div>
+</header>
+<!-- popup -->
+<div class="popup-wrapper">
+    <div class="popup-bg"></div>
+    <div class="popup">
+        <div class="popup__txtBox">
+            <div class="popup__tit d-flex">
+                진행중인 광고는<br/>
+                1:1문의를 통해 요청해주세요
+            </div>
+        </div>
+        <div class="popup__btnBox d-flex">
+            <a href="" class="popup__btn d-flex cancel">확인</a>
+            <a href="" class="popup__btn d-flex">1:1문의</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container nofooter">
+    <div class="mypage-ad">
+        <div class="section sec1">
+            <div class="wrap">
+                <div class="section__head d-flex">
+                    <div class="inp inp-select">
+                        <select name="" id="">
+                            <option value="">진행중</option>
+                            <option value="">완료</option>
+                            <option value="">검토중</option>
+                        </select>
+                    </div>
+                    <a href="" class="btn btn-alignment">정렬</a>
+                </div>
+                <div class="section__body">
+                    <div class="mart__item d-flex">
+                        <a href="" class="d-flex">
+                            <div class="mart__thumb">
+                                <img src="http://via.placeholder.com/80x90" alt="">
+                            </div>
+                            <div class="mart__info">
+                                <div class="mart__name text-ellipsis">
+                                    광고제목
+                                </div>
+                                <div class="mart__address">2020.06.20 ~ 2020.07.20</div>
+                            </div>
+                        </a>
+                        <div class="buttonBox">
+                            <a href="" class="modify adBtn">
+                                삭제
+                            </a>
+                            <a href="" class="del adBtn">
+                                수정
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mart__item d-flex">
+                        <a href="" class="d-flex">
+                            <div class="mart__thumb">
+                                <img src="http://via.placeholder.com/80x90" alt="">
+                            </div>
+                            <div class="mart__info">
+                                <div class="mart__name text-ellipsis">
+                                    광고제목
+                                </div>
+                                <div class="mart__address">2020.06.20 ~ 2020.07.20</div>
+                            </div>
+                        </a>
+                        <div class="buttonBox">
+                            <a href="" class="modify adBtn">
+                                삭제
+                            </a>
+                            <a href="" class="del adBtn">
+                                수정
+                            </a>
+                        </div>
+                    </div>-
+                </div>
+            </div>
+        </div>
+
+        <div class="modify-request d-flex bottomBtn">
+            수정요청
+            <span>??</span>건
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
