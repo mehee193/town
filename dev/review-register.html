@@ -1,124 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
-    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
-<div class="wrapper">
-<header class="header header--bn">
-    <div class="wrap">
-        <div class="header__inner header__txt d-flex">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/jquery-ui/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--bn">
+        <div class="wrap">
+          <div class="header__inner header__txt d-flex">
             <a href="" class="btn btn-close d-flex">닫기</a>
             <div class="header__tit">리뷰등록</div>
+          </div>
         </div>
-    </div>
-</header>
-<div class="container nofooter">
-    <div class="review-register">
-        <div class="section sec1">
+      </header>
+      <div class="container nofooter">
+        <div class="review-register">
+          <div class="section sec1">
             <div class="section__head">
-                <div class="wrap d-flex">
-                    <div class="section__tit small">별점</div>
-                </div>
+              <div class="wrap d-flex">
+                <div class="section__tit small">별점</div>
+              </div>
             </div>
             <div class="section__body">
-                <div class="wrap">
-                    <div class="form">
-                        <form action="">
-                            <div class="form__row">
-                                <div class="inp inp-checkbox2 d-flex">
-                                    <label for="r1">
-                                        <input type="radio" name="star" id="r1" value="1">
-                                        <span></span>
-                                    </label>
-                                    <label for="r2">
-                                        <input type="radio" name="star" id="r2" value="2">
-                                        <span></span>
-                                    </label>
-                                    <label for="r3">
-                                        <input type="radio" name="star" id="r3" value="3">
-                                        <span></span>
-                                    </label>
-                                    <label for="r4">
-                                        <input type="radio" name="star" id="r4" value="4">
-                                        <span></span>
-                                    </label>
-                                    <label for="r5">
-                                        <input type="radio" name="star" id="r5" value="5">
-                                        <span></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </form>
+              <div class="wrap">
+                <div class="form">
+                  <form action="">
+                    <div class="form__row">
+                      <div class="inp inp-checkbox2 d-flex">
+                        <label for="r1">
+                          <input type="radio" name="star" id="r1" value="1" />
+                          <span></span>
+                        </label>
+                        <label for="r2">
+                          <input type="radio" name="star" id="r2" value="2" />
+                          <span></span>
+                        </label>
+                        <label for="r3">
+                          <input type="radio" name="star" id="r3" value="3" />
+                          <span></span>
+                        </label>
+                        <label for="r4">
+                          <input type="radio" name="star" id="r4" value="4" />
+                          <span></span>
+                        </label>
+                        <label for="r5">
+                          <input type="radio" name="star" id="r5" value="5" />
+                          <span></span>
+                        </label>
+                      </div>
                     </div>
+                  </form>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="section sec2">
+          </div>
+          <div class="section sec2">
             <div class="section__head">
-                <div class="wrap d-flex">
-                    <div class="section__tit small">사진첨부</div>
-                </div>
+              <div class="wrap d-flex">
+                <div class="section__tit small">사진첨부</div>
+              </div>
             </div>
             <div class="section__body">
-                <div class="wrap">
-                    <div class="form">
-                        <form action="">
-                            <div class="inp inp-fileBox d-flex">
-                                <label for="imgInput">
-                                    <input type="file" name="" id="imgInput">
-                                    <span></span>
-                                    <img src="#" alt="" id="imgSection" class="imgSection">
-                                </label>
-                                <label for="imgInput">
-                                    <input type="file" name="" id="imgInput">
-                                    <span></span>
-                                    <img src="#" alt="" id="imgSection" class="imgSection">
-                                </label>
-                                <label for="imgInput">
-                                    <input type="file" name="" id="imgInput">
-                                    <span></span>
-                                    <img src="#" alt="" id="imgSection" class="imgSection">
-                                </label>
-                            </div>
-                        </form>
+              <div class="wrap">
+                <div class="form">
+                  <form action="">
+                    <div class="inp inp-fileBox d-flex imgbox">
+                      <label for="imgInput">
+                        <input type="file" name="" id="imgInput" />
+                        <span></span>
+                        <img
+                          src="#"
+                          alt=""
+                          id="imgSection"
+                          class="imgSection"
+                        />
+                      </label>
+                      <label for="imgInput">
+                        <input type="file" name="" id="imgInput" />
+                        <span></span>
+                        <img
+                          src="#"
+                          alt=""
+                          id="imgSection"
+                          class="imgSection"
+                        />
+                      </label>
+                      <label for="imgInput">
+                        <input type="file" name="" id="imgInput" />
+                        <span></span>
+                        <img
+                          src="#"
+                          alt=""
+                          id="imgSection"
+                          class="imgSection"
+                        />
+                      </label>
                     </div>
+                  </form>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="section sec3">
+          </div>
+          <div class="section sec3">
             <div class="section__head">
-                <div class="wrap d-flex">
-                    <div class="section__tit small">내용입력</div>
-                </div>
+              <div class="wrap d-flex">
+                <div class="section__tit small">내용입력</div>
+              </div>
             </div>
             <div class="section__body">
-                <div class="wrap">
-                    <div class="leaflet__form form">
-                        <form action="">
-                            <div class="form__row">
-                                <div class="inp inp-textarea">
-                                    <textarea placeholder="입력해주세요"></textarea>
-                                </div>
-                            </div>
-                        </form>
+              <div class="wrap">
+                <div class="leaflet__form form">
+                  <form action="">
+                    <div class="form__row">
+                      <div class="inp inp-textarea">
+                        <textarea placeholder="입력해주세요"></textarea>
+                      </div>
                     </div>
+                  </form>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="btnBox">
+          <div class="btnBox">
             <div class="wrap">
-                <a href="" class="btn btn-link d-flex">업로드</a>
+              <a href="" class="btn btn-link d-flex">업로드</a>
             </div>
+          </div>
         </div>
+      </div>
+      @@include('./include/footer.html')
+
+      <script>
+        document.querySelectorAll('.imgbox label input').forEach((file) => {
+          file.onchange = function () {
+            var fileList = file.files;
+            var reader = new FileReader();
+            reader.readAsDataURL(fileList[0]);
+            reader.onload = function () {
+              console.log(reader.result);
+              file.closest('label').querySelector('img').src = reader.result;
+            };
+          };
+        });
+      </script>
     </div>
-</div>
-@@include('./include/footer.html')
+  </body>
+</html>

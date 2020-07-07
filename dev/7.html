@@ -1,57 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
-    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
-<div class="wrapper">
-<header class="header">
-    <div class="wrap">
-        <div class="header__inner header__txt d-flex">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/jquery-ui/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="wrap">
+          <div class="header__inner header__txt d-flex">
             <a href="" class="btn btn-close d-flex">닫기</a>
             <div class="header__tit">문의</div>
+          </div>
         </div>
-    </div>
-</header>
+      </header>
 
-<div class="container nofooter">
-    <div class="mypage-ad qna-report">
-        <div class="section sec1">
+      <div class="container nofooter">
+        <div class="mypage-ad qna-report">
+          <div class="section sec1">
             <div class="wrap">
-                <div class="section__head d-flex">
-                    <div class="inp inp-select">
-                        <select name="" id="">
-                            <option value="">완료</option>
-                            <option value="">미완료</option>
-                        </select>
-                    </div>
+              <div class="section__head d-flex">
+                <div class="inp inp-select">
+                  <select name="" id="">
+                    <option value="">완료</option>
+                    <option value="">미완료</option>
+                  </select>
                 </div>
-                <div class="section__body">
-                    <div class="d-flex list">
-                        <a href="" class="d-flex tit text-ellipsis">
-                            TITLE
-                        </a>
-                        <div class="buttonBox">
-                            <a href="" class="modify adBtn">
-                                삭제
-                            </a>
-                        </div>
-                    </div>
+              </div>
+              <div class="section__body">
+                <div class="d-flex list">
+                  <a href="" class="tit text-ellipsis">
+                    <span class="mart__state processing">답변완료</span>
+                    <h3>
+                      TITLE
+                    </h3>
+                  </a>
+                  <div class="buttonBox">
+                    <a href="" class="modify adBtn">
+                      삭제
+                    </a>
+                  </div>
                 </div>
+                <div class="d-flex list">
+                  <a href="" class="tit text-ellipsis">
+                    <span class="mart__state complete">처리중</span>
+                    <h3>
+                      TITLE
+                    </h3>
+                  </a>
+                  <div class="buttonBox">
+                    <a href="" class="modify adBtn">
+                      삭제
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="modify-request d-flex bottomBtn">
-            수정요청
-            <span>??</span>건
-        </div>
+      </div>
+      @@include('./include/footer.html')
     </div>
-</div>
-@@include('./include/footer.html')
+  </body>
+</html>

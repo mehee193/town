@@ -1,149 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
-    <link rel="stylesheet" href="./assets/plugins/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
-<div class="wrapper">
-<header class="header">
-    <div class="wrap">
-        <div class="header__inner header__search d-flex">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/jquery-ui/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <style>
+      .container {
+        background: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="wrap">
+          <div class="header__inner header__search d-flex">
             <div class="inp inp-select">
-                <select name="" id="">
-                    <option value="">신사동</option>
-                    <option value="">신사동</option>
-                    <option value="">신사동</option>
-                </select>
+              <select name="" id="">
+                <option value="">신사동</option>
+                <option value="">신사동</option>
+                <option value="">신사동</option>
+              </select>
             </div>
-            <a href="" class="btn btn-search">검색 버튼</a>
+            <!-- <a href="" class="btn btn-search">검색 버튼</a> -->
+          </div>
         </div>
-    </div>
-</header>
+      </header>
 
-<div class="container">
-    <div class="mart mart-enter">
-        <div class="mart__search">
+      <div class="container">
+        <div class="mart mart-enter">
+          <div class="mart__search">
             <div class="wrap">
-                <div class="inp inp-search">
-                    <input type="text" placeholder="검색">
-                </div>
+              <div class="inp inp-search">
+                <input type="text" placeholder="검색" />
+              </div>
             </div>
-        </div>
-        <div class="mart__inner">
+          </div>
+          <div class="mart__inner">
             <div class="section__head">
-                <div class="wrap d-flex">
-                    <div class="section__tit">입점된 마트보기</div>
-                    <a href="" class="btn btn-alignment">정렬</a>
-                </div>
+              <div class="wrap d-flex">
+                <div class="section__tit">입점된 마트보기</div>
+                <label for="filtermart" class="btn btn-alignment">
+                  <select
+                    name=""
+                    id="filtermart"
+                    style="display: block; opacity: 0;"
+                  >
+                    <option value="">모두</option>
+                    <option value="">filter2</option>
+                    <option value="">filter3</option>
+                  </select>
+                </label>
+              </div>
             </div>
             <div class="mart__list">
-                <div class="mart__item">
-                    <a href="">
-                        <div class="wrap d-flex">
-                            <div class="mart__thumb">
-                                <img src="http://via.placeholder.com/80x90" alt="">
-                            </div>
-                            <div class="mart__info">
-                                <div class="mart__rating">
-                                    <img src="./assets/images/icon/rating-4.png" alt="">
-                                </div>
-                                <div class="mart__name">
-                                    빅마켓 서울특별시 신사동점                                    
-                                </div>
-                                <div class="mart__address text-ellipsis">서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125 롯데마트</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="mart__item">
-                    <a href="">
-                        <div class="wrap d-flex">
-                            <div class="mart__thumb">
-                                <img src="http://via.placeholder.com/80x90" alt="">
-                            </div>
-                            <div class="mart__info">
-                                <div class="mart__rating">
-                                    <img src="./assets/images/icon/rating-4.png" alt="">
-                                </div>
-                                <div class="mart__name">
-                                    빅마켓 서울특별시 신사동점                                    
-                                </div>
-                                <div class="mart__address text-ellipsis">서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125 롯데마트</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="mart__item">
-                    <a href="">
-                        <div class="wrap d-flex">
-                            <div class="mart__thumb">
-                                <img src="http://via.placeholder.com/80x90" alt="">
-                            </div>
-                            <div class="mart__info">
-                                <div class="mart__rating">
-                                    <img src="./assets/images/icon/rating-4.png" alt="">
-                                </div>
-                                <div class="mart__name">
-                                    빅마켓 서울특별시 신사동점                                    
-                                </div>
-                                <div class="mart__address text-ellipsis">서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125 롯데마트</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="mart__item">
-                    <a href="">
-                        <div class="wrap d-flex">
-                            <div class="mart__thumb">
-                                <img src="http://via.placeholder.com/80x90" alt="">
-                            </div>
-                            <div class="mart__info">
-                                <div class="mart__rating">
-                                    <img src="./assets/images/icon/rating-4.png" alt="">
-                                </div>
-                                <div class="mart__name">
-                                    빅마켓 서울특별시 신사동점                                    
-                                </div>
-                                <div class="mart__address text-ellipsis">서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125 롯데마트</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="mart__item">
-                    <a href="">
-                        <div class="wrap d-flex">
-                            <div class="mart__thumb">
-                                <img src="http://via.placeholder.com/80x90" alt="">
-                            </div>
-                            <div class="mart__info">
-                                <div class="mart__rating">
-                                    <img src="./assets/images/icon/rating-4.png" alt="">
-                                </div>
-                                <div class="mart__name">
-                                    빅마켓 서울특별시 신사동점                                    
-                                </div>
-                                <div class="mart__address text-ellipsis">서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125 롯데마트</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="banner-area">
-            <div class="banner">
-                <a href="" class="banner__link">
-                    <img src="./assets/images/banner.png" alt="">
+              <div class="mart__item">
+                <a href="">
+                  <div class="wrap d-flex">
+                    <div class="mart__thumb">
+                      <img src="http://via.placeholder.com/80x90" alt="" />
+                    </div>
+                    <div class="mart__info">
+                      <div class="mart__rating">
+                        <img src="./assets/images/icon/rating-4.png" alt="" />
+                      </div>
+                      <div class="mart__name">
+                        빅마켓 서울특별시 신사동점
+                      </div>
+                      <div class="mart__address text-ellipsis">
+                        서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125
+                        롯데마트
+                      </div>
+                    </div>
+                  </div>
                 </a>
+              </div>
+              <div class="mart__item">
+                <a href="">
+                  <div class="wrap d-flex">
+                    <div class="mart__thumb">
+                      <img src="http://via.placeholder.com/80x90" alt="" />
+                    </div>
+                    <div class="mart__info">
+                      <div class="mart__rating">
+                        <img src="./assets/images/icon/rating-4.png" alt="" />
+                      </div>
+                      <div class="mart__name">
+                        빅마켓 서울특별시 신사동점
+                      </div>
+                      <div class="mart__address text-ellipsis">
+                        서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125
+                        롯데마트
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="mart__item">
+                <a href="">
+                  <div class="wrap d-flex">
+                    <div class="mart__thumb">
+                      <img src="http://via.placeholder.com/80x90" alt="" />
+                    </div>
+                    <div class="mart__info">
+                      <div class="mart__rating">
+                        <img src="./assets/images/icon/rating-4.png" alt="" />
+                      </div>
+                      <div class="mart__name">
+                        빅마켓 서울특별시 신사동점
+                      </div>
+                      <div class="mart__address text-ellipsis">
+                        서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125
+                        롯데마트
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="mart__item">
+                <a href="">
+                  <div class="wrap d-flex">
+                    <div class="mart__thumb">
+                      <img src="http://via.placeholder.com/80x90" alt="" />
+                    </div>
+                    <div class="mart__info">
+                      <div class="mart__rating">
+                        <img src="./assets/images/icon/rating-4.png" alt="" />
+                      </div>
+                      <div class="mart__name">
+                        빅마켓 서울특별시 신사동점
+                      </div>
+                      <div class="mart__address text-ellipsis">
+                        서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125
+                        롯데마트
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="mart__item">
+                <a href="">
+                  <div class="wrap d-flex">
+                    <div class="mart__thumb">
+                      <img src="http://via.placeholder.com/80x90" alt="" />
+                    </div>
+                    <div class="mart__info">
+                      <div class="mart__rating">
+                        <img src="./assets/images/icon/rating-4.png" alt="" />
+                      </div>
+                      <div class="mart__name">
+                        빅마켓 서울특별시 신사동점
+                      </div>
+                      <div class="mart__address text-ellipsis">
+                        서울 신사동 영중로 125 롯데마트서울 신사동 영중로 125
+                        롯데마트
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="banner-area">
+            <div class="banner">
+              <a href="" class="banner__link">
+                <img src="./assets/images/banner.png" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+      @@include('./include/gnb.html') @@include('./include/footer.html')
     </div>
-</div>
-@@include('./include/gnb.html')
-@@include('./include/footer.html')
+  </body>
+</html>

@@ -66,7 +66,7 @@
                     <div class="form">
                         <form action="">
                             <div class="form__tit">사진 첨부</div>
-                            <div class="inp inp-fileBox d-flex">
+                            <div class="inp inp-fileBox d-flex imgbox">
                                 <label for="imgInput">
                                     <input type="file" name="" id="imgInput">
                                     <span></span>
@@ -173,3 +173,17 @@
     </div>
 </div>
 @@include('./include/footer.html')
+
+<script>
+    document.querySelectorAll('.imgbox label input').forEach((file) => {
+      file.onchange = function () {
+        var fileList = file.files;
+        var reader = new FileReader();
+        reader.readAsDataURL(fileList[0]);
+        reader.onload = function () {
+          console.log(reader.result);
+          file.closest('label').querySelector('img').src = reader.result;
+        };
+      };
+    });
+  </script>

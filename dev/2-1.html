@@ -30,18 +30,18 @@
                             <div class="form__tit">지역확인</div>
                             <div class="inp inp-radio d-flex">
                                 <label for="g1">
-                                    <input type="radio" name="gender0" id="g1" checked>
+                                    <input type="radio" name="gender0" id="g1" value="y" class="area" checked>
                                     <span>YES</span>
                                 </label>
                                 <label for="g2">
-                                    <input type="radio" name="gender0" id="g2">
+                                    <input type="radio" name="gender0" id="g2" value="n" class="area">
                                     <span>NO</span>
                                 </label>
                             </div>
                         </div>
 
                         <!-- yes 선택시 -->
-                        <div class="form__row">
+                        <div class="form__row" data-tab="y">
                             <div class="inp inp-radio d-flex">
                                 <label for="k1" class="flex-1">
                                     <input type="radio" name="k0" id="k1" checked>
@@ -63,7 +63,7 @@
                         </div>
 
                         <!-- no 선택시 -->
-                        <div class="default-settingMessage">
+                        <div class="default-settingMessage" data-tab="n" style="display: none;">
                             기본적으로 5km 한정으로 노출됩니다.
                         </div>
                     </form>
@@ -80,3 +80,10 @@
     </div>
 </div>
 @@include('./include/footer.html')
+
+<script>
+    $('.area').on('change', function(){
+        $('[data-tab]').hide();
+        $('[data-tab="'+$(this).val()+'"]').show();
+    })
+</script>
