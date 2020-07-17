@@ -31,59 +31,74 @@
             <div class="section__body">
               <div class="wrap">
                 <div class="form leaflet__form">
-                  <form action="">
-                    <div class="row">
+                  <form action="" id="formlist">
+                    <div>
+                      <div class="row">
                         <div class="form__row form__row--date">
-                            <div class="form__tit">기간</div>
-                            <div class="inp inp-input d-flex">
+                          <div class="form__tit">기간</div>
+                          <div class="inp inp-input d-flex">
                             <div class="col">
-                                <input type="date" placeholder="" id="currentDate" />
+                              <input
+                                type="date"
+                                placeholder=""
+                                id="currentDate"
+                              />
                             </div>
                             <span class="hyphen">-</span>
                             <div class="col">
-                                <input type="date" placeholder="" id="currentDate2" />
+                              <input
+                                type="date"
+                                placeholder=""
+                                id="currentDate2"
+                              />
                             </div>
-                            </div>
+                          </div>
                         </div>
                         <div class="form__row">
-                            <div class="form__tit">사진</div>
-                            <div class="inp inp-fileBox d-flex imgbox">
-                            <label for="imgInput">
-                                <input type="file" name="" id="imgInput" />
-                                <span></span>
-                                <img
+                          <div class="form__tit">사진</div>
+                          <div class="inp inp-fileBox d-flex imgbox">
+                            <label for="imgInput-sale">
+                              <input
+                                type="file"
+                                name=""
+                                id="imgInput-sale"
+                                class="imgInputSale"
+                              />
+                              <span></span>
+                              <img
                                 src="#"
                                 alt=""
                                 id="imgSection"
                                 class="imgSection"
-                                />
+                              />
                             </label>
-                            </div>
+                          </div>
                         </div>
                         <div class="form__row">
-                            <div class="form__tit">내용</div>
-                            <div class="inp inp-textarea">
-                                <textarea placeholder="입력해주세요"></textarea>
-                            </div>
+                          <div class="form__tit">내용</div>
+                          <div class="inp inp-textarea">
+                            <textarea placeholder="입력해주세요"></textarea>
+                          </div>
                         </div>
                         <div class="form__row">
-                            <div class="form__tit">원래가격</div>
-                            <div class="inp inp-input">
-                                <input type="" />
-                            </div>
+                          <div class="form__tit">원래가격</div>
+                          <div class="inp inp-input">
+                            <input type="" />
+                          </div>
                         </div>
                         <div class="form__row">
-                            <div class="form__tit">판매가격</div>
-                            <div class="inp inp-input">
-                                <input type="" />
-                            </div>
+                          <div class="form__tit">판매가격</div>
+                          <div class="inp inp-input">
+                            <input type="" />
+                          </div>
                         </div>
+                      </div>
                     </div>
                   </form>
 
-                    <button class="plusBtn">
-                        <img src="./assets/images/icon/plus-black.png" alt="">
-                    </button>
+                  <button class="plusBtn">
+                    <img src="./assets/images/icon/plus-black.png" alt="" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -99,17 +114,98 @@
       @@include('./include/footer.html')
 
       <script>
-        const mainImg = document.querySelector('#mainTitleimg');
-        mainImg.onchange = function () {
-          var fileList = mainImg.files;
-          var reader = new FileReader();
-          reader.readAsDataURL(fileList[0]);
-          reader.onload = function () {
-            console.log(reader.result);
-            document.querySelector('#mainTitleThumb').src = reader.result;
-          };
-        };
+        // const mainImg = document.querySelector('#mainTitleimg');
+        // mainImg.onchange = function () {
+        //   var fileList = mainImg.files;
+        //   var reader = new FileReader();
+        //   reader.readAsDataURL(fileList[0]);
+        //   reader.onload = function () {
+        //     console.log(reader.result);
+        //     document.querySelector('#mainTitleThumb').src = reader.result;
+        //   };
+        // };
+
+        $(function () {
+          var n = 0;
+
+          $('.plusBtn').on('click', function () {
+            if (n >= 4) {
+              alert('최대 5개까지만 가능합니다.');
+              return false;
+            }
+            var html = `
+            <div class="row" style="padding-top:15px;border-top:1px solid #ccc;">
+                <div class="form__row form__row--date">
+                    <div class="form__tit">기간</div>
+                    <div class="inp inp-input d-flex">
+                    <div class="col">
+                        <input type="date" placeholder="" id="currentDate" />
+                    </div>
+                    <span class="hyphen">-</span>
+                    <div class="col">
+                        <input type="date" placeholder="" id="currentDate2" />
+                    </div>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__tit">사진</div>
+                    <div class="inp inp-fileBox d-flex imgbox">
+                    <label for="imgInput-sale${n}">
+                        <input type="file" name="" id="imgInput-sale${n}" class="imgInputSale"/>
+                        <span></span>
+                        <img
+                        src="#"
+                        alt=""
+                        id="imgInput-sale${n++}"
+                        class="imgSection"
+                        />
+                    </label>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__tit">내용</div>
+                    <div class="inp inp-textarea">
+                        <textarea placeholder="입력해주세요"></textarea>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__tit">원래가격</div>
+                    <div class="inp inp-input">
+                        <input type="" />
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__tit">판매가격</div>
+                    <div class="inp inp-input">
+                        <input type="" />
+                    </div>
+                </div>
+            </div>
+            `;
+            $('#formlist').append(html);
+          });
+        });
       </script>
     </div>
   </body>
 </html>
+
+<script>
+  function readURL2(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $(input)
+          .parents('label')
+          .find('.imgSection')
+          .attr('src', e.target.result);
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  $(function () {
+    $(document).on('change', '.imgInputSale', function () {
+      readURL2(this);
+    });
+  });
+</script>

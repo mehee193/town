@@ -92,14 +92,13 @@
 
 /* login */
 .login{background:#023E73;}
-.login .wrap{height:100vh;flex-direction:column;align-items:center;justify-content:center;}
+.login .wrap{height:100vh;flex-direction:column;align-items:center;justify-content:center;padding-bottom: 50px;}
 .login__form{width:100%;}
-.login__logo{margin-bottom:160px;}
+.login__logo{margin-bottom:100px;}
 .login .form__row{margin-bottom:40px;}
 .login .form__row:last-child{margin-bottom:0;}
 .login .inp-input{border-radius:15px;background:#fff;margin-bottom:20px;overflow:hidden;}
 .login .btn-link{background:#046BC5;}
-
 .login__copyRight{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);font-size:14px;color:#fff;opacity:.8;}
 
 .formLink{justify-content:center;}
@@ -134,7 +133,8 @@
 
 .product.small .product__item{width:0px;}
 .product.small .product__link{display:flex;flex-direction:column;align-items:center;}
-.product.small .product__thumb{width:125px;height:125px;border-radius:15px;overflow:hidden;margin-bottom:15px;}
+.product.small .product__thumb{width:125px;height:125px;border-radius:15px;overflow:hidden;margin-bottom:15px;position:relative;}
+.product.small .product__thumb span{position:absolute;left: 10px;top: 10px;color:#888;font-size: 12px;}
 .product.small .product__name{width:125px;font-size:13px;color:#979A9F;font-weight:600;line-height:16px;margin-bottom:15px;}
 .product.small .product__price{color:#45546D;}
 .product.small .product__discount{margin-right:0;margin-left:5px;}
@@ -360,6 +360,7 @@
 .mypage .section{margin-top:15px;background:#fff;margin-bottom:0;}
 .mypage__link{width:100%;height:60px;justify-content:space-between;align-items:center;}
 .mypage__tit{font-size:18px;color:#45546D;}
+.mypage__tit .mart__state{font-size: 12px;display: block;margin-bottom: 3px;color:#48AB97;}
 .mypage__tit.blue{color:#046BC5;}
 
 .membership .section{background:#fff;padding:30px 0;margin-bottom:15px;}
@@ -441,6 +442,10 @@
 .mart__state.complete:before{background: #999;}
 .mart__state.request{color:#f00;}
 .mart__state.request:before{background: #f00;}
+.mart__state.possible{color:#48AB97;}
+.mart__state.possible:before{background: #48AB97;}
+.mart__state.disabled{color:#999;}
+.mart__state.disabled:before{background: #999;}
 
 .refund{padding:15px;}
 .refund__title{text-align: center;font-size: 18px}
@@ -454,10 +459,10 @@
 .plusBtn{width:40px;height:40px;border:2px solid #000;border-radius:50%;margin:0 auto;display: flex;align-items: center;justify-content: center;}
 .plusBtn img{height: 20px;}
 
-.withdraw__txtBox{border:1px solid #ddd;border-radius:5px;padding:10px 5px;}
+.withdraw__txtBox{border:1px solid #ddd;border-radius:5px;padding:15px;}
 .withdraw__txtBox .txtBox__item{justify-content:space-between;margin-bottom:10px;}
 .withdraw__txtBox .txtBox__item:last-child{margin-bottom:0;}
-.withdraw__txtBox .txtBox__item .tit{font-size:16px;color:#000;}
+.withdraw__txtBox .txtBox__item .tit{font-size:14px;color:#000;}
 .withdraw__txtBox .txtBox__item span{margin-right:10px;font-weight:700;}
 
 .addressBtn{display: flex;justify-content: center;margin:10px;}

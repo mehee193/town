@@ -21,18 +21,11 @@
         <div class="wrap">
           <div class="header__inner header__search d-flex">
             <div class="inp inp-select">
-              <select name="" id="">
-                <option value="">신사동</option>
-                <option value="">신사동</option>
-                <option value="">신사동</option>
+              <select name="" id="select-location">
+                <option value="sinsa">신사동</option>
+                <option value="register">위치 등록</option>
               </select>
             </div>
-            <!-- <input
-              type="text"
-              class="header__search-input"
-              placeholder="검색해주세요!"
-            />
-            <a href="" class="btn btn-search">검색 버튼</a> -->
           </div>
         </div>
       </header>
@@ -102,6 +95,7 @@
                 <div class="product__item">
                   <a href="" class="product__link">
                     <div class="product__thumb">
+                      <span>정보가 들어갑니다.</span>
                       <img src="http://via.placeholder.com/125X125" alt="" />
                     </div>
                     <div class="product__txt">
@@ -118,6 +112,7 @@
                 <div class="product__item">
                   <a href="" class="product__link">
                     <div class="product__thumb">
+                      <span>정보가 들어갑니다.</span>
                       <img src="http://via.placeholder.com/125X125" alt="" />
                     </div>
                     <div class="product__txt">
@@ -134,6 +129,7 @@
                 <div class="product__item">
                   <a href="" class="product__link">
                     <div class="product__thumb">
+                      <span>정보가 들어갑니다.</span>
                       <img src="http://via.placeholder.com/125X125" alt="" />
                     </div>
                     <div class="product__txt">
@@ -150,6 +146,7 @@
                 <div class="product__item">
                   <a href="" class="product__link">
                     <div class="product__thumb">
+                      <span>정보가 들어갑니다.</span>
                       <img src="http://via.placeholder.com/125X125" alt="" />
                     </div>
                     <div class="product__txt">
@@ -183,5 +180,84 @@
       </div>
       @@include('./include/gnb.html') @@include('./include/footer.html')
     </div>
+
+    <div class="modal" id="reg-address" style="display: none;">
+      <div class="modal__content">
+        <a href="" class="btn btn-close d-flex">닫기</a>
+        <h2 class="modal__title">등록된 주소</h2>
+        <div class="modal__body">
+          <div class="join__form form">
+            <form action="" id="addressList">
+              <div class="form__row">
+                <div class="form__tit">
+                  #1
+                </div>
+                <div class="inp-inner d-flex">
+                  <div class="col fst">
+                    <div class="inp inp-input mb0">
+                      <input type="text" placeholder="입력해주세요" />
+                    </div>
+                  </div>
+                  <div class="col lst">
+                    <a href="" class="btn btn-link">검색</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div class="addressBtn" id="addAddressBtn">
+              <button></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal__btnbox">
+          <a
+            href="/"
+            class="modal__btn modal__btn—yellow js-modal-close"
+            style=""
+            >확인</a
+          >
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
+<script>
+  $(function () {
+    var previous;
+    var count = 2;
+    $('select')
+      .on('focus', function () {
+        previous = $(this).val();
+      })
+      .on('change', function () {
+        if ($(this).val() === 'register') {
+          $('#reg-address').show();
+        }
+
+        $(this).val(previous);
+      });
+
+    $('#addAddressBtn button').on('click', function () {
+      var html = `
+      <div class="form__row" style="margin-top: 10px;">
+        <div class="form__tit">
+          #${count++}
+        </div>
+        <div class="inp-inner d-flex">
+          <div class="col fst">
+            <div class="inp inp-input mb0">
+              <input type="text" placeholder="입력해주세요" />
+            </div>
+          </div>
+          <div class="col lst">
+            <a href="" class="btn btn-link">검색</a>
+          </div>
+        </div>
+      </div>
+      `;
+      $('#addressList').append(html);
+    });
+  });
+</script>
