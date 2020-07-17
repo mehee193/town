@@ -11,6 +11,8 @@
 .header__txt{justify-content:center;position:relative;font-size:18px;color:#45546D;font-weight:700;}
 .header .btn-close{width:60px;height:60px;background:url(../images/icon/close.png) no-repeat left center;text-indent:-9999px;overflow:hidden;position:absolute;left:0;top:0;}
 
+.header .btn-close.mypage__close{position:static;background:url(../images/icon/close.png) no-repeat center;}
+
 .header--type2{background:none;}
 .header__btn .btn{width:40px;height:60px;text-indent:-9999px;overflow:hidden;}
 .header__btn .btn-back{background:url(../images/icon/back.png) no-repeat center;}
@@ -98,6 +100,8 @@
 .login .inp-input{border-radius:15px;background:#fff;margin-bottom:20px;overflow:hidden;}
 .login .btn-link{background:#046BC5;}
 
+.login__copyRight{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);font-size:14px;color:#fff;opacity:.8;}
+
 .formLink{justify-content:center;}
 .formLink a{font-size:14px;color:#ddd;}
 .formLink .bar{font-size:14px;color:#ddd;margin:0 10px;}
@@ -134,6 +138,8 @@
 .product.small .product__name{width:125px;font-size:13px;color:#979A9F;font-weight:600;line-height:16px;margin-bottom:15px;}
 .product.small .product__price{color:#45546D;}
 .product.small .product__discount{margin-right:0;margin-left:5px;}
+
+.product__link > img {width:100%;}
 
 .banner__top{height:45px;background:#023E73;justify-content:center;align-items:center;}
 .banner__top__txt{font-size:14px;color:#fff;margin-right:20px;}
@@ -200,12 +206,17 @@
 .market-info .banner{margin:15px 0;}
 .market-info .sec2{background:#fff;padding-top:30px;}
 
+.sale__item{position: relative;}
+.mart__item{position: relative;}
 .sale__item > a{display:inline-block;width:100%;padding:20px 0;}
 .sale__item .wrap{align-items:center;}
 .sale__thumb{width:100px;height:100px;border-radius:15px;overflow:hidden;border:1px solid #ddd;margin-right:15px;}
 .sale__product-name{font-size:20px;color:#979A9F;font-weight:600;line-height:22px;margin-bottom:10px;}
 .sale__address{font-size:12px;color:rgba(151,154,159.7);margin-bottom:5px;}
 .sale .product__price{font-size:18px;font-weight:600;}
+
+.sale__item .sale__close{position:absolute;right:10px;top:10px;}
+.mart__item .mart__close{position:absolute;right:10px;top:10px;}
 
 
 /* review */
@@ -219,6 +230,8 @@
 .review__notification{width:20px;height:20px;display:inline-block;background:url(../images/icon/favorite-gray.png) no-repeat center;text-indent:-9999px;overflow:hidden;background-size:contain;}
 .review__notification.active{background:url(../images/icon/favorite-active.png) no-repeat center;background-size:contain;}
 .review__txt{font-size:14px;color:#78849E;line-height:20px;}
+
+.review__report{text-align:right;}
 
 /* review details */
 .review-details .section{background:#fff;margin-bottom:0;}
@@ -343,6 +356,7 @@
 .header__txt--mypage a{width:100%;font-size:18px;color:#45546D;font-weight:600;align-items:center;justify-content:space-between;}
 .header__txt--mypage .header__tit{align-items:center;}
 .header__txt--mypage .mark{width:55px;height:25px;font-size:14px;color:#fff;background:#048ABF;justify-content:center;align-items:center;border-radius:5px;font-weight:300;margin-left:20px;}
+.header__txt--mypage .general{background:#999;}
 .mypage .section{margin-top:15px;background:#fff;margin-bottom:0;}
 .mypage__link{width:100%;height:60px;justify-content:space-between;align-items:center;}
 .mypage__tit{font-size:18px;color:#45546D;}
@@ -425,6 +439,8 @@
 .mart__state.checking:before{background: #f18024;}
 .mart__state.complete{color:#999;}
 .mart__state.complete:before{background: #999;}
+.mart__state.request{color:#f00;}
+.mart__state.request:before{background: #f00;}
 
 .refund{padding:15px;}
 .refund__title{text-align: center;font-size: 18px}
@@ -433,3 +449,16 @@
 .refund__item strong{width: 80px;flex: none;font-weight: 400;padding-right: 10px;}
 .refund__item p{color:#777;font-size: 12px;}
 .refund__description {font-size: 12px;color:#999;line-height: 20px;margin-bottom: 20px;text-align: center;margin-top: 20px;}
+
+
+.plusBtn{width:40px;height:40px;border:2px solid #000;border-radius:50%;margin:0 auto;display: flex;align-items: center;justify-content: center;}
+.plusBtn img{height: 20px;}
+
+.withdraw__txtBox{border:1px solid #ddd;border-radius:5px;padding:10px 5px;}
+.withdraw__txtBox .txtBox__item{justify-content:space-between;margin-bottom:10px;}
+.withdraw__txtBox .txtBox__item:last-child{margin-bottom:0;}
+.withdraw__txtBox .txtBox__item .tit{font-size:16px;color:#000;}
+.withdraw__txtBox .txtBox__item span{margin-right:10px;font-weight:700;}
+
+.addressBtn{display: flex;justify-content: center;margin:10px;}
+.addressBtn button{width:30px;height:30px;background:url(../images/icon/plus.png) no-repeat center #03588C;background-size:20px;border-radius:50%;}

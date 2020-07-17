@@ -89,12 +89,21 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).toggleClass('active');
     });
+    $('.modal .modal__btn').on('click', function(e){
+        e.preventDefault();
+        $('.modal').hide();
+    });
 
     
     $('.popup-bg').on('click', function(e){
         e.preventDefault();
         $('.popup-wrapper').hide();
     });
+    $('.popup__btnBox .cancel').on('click', function(e){
+        e.preventDefault();
+        $('.popup-wrapper').hide();
+    });
+
 
     $('.cs__tabBox .cs__tabLink').on('click', function(){
         var activeTab2 = $(this).attr('data-csTab');

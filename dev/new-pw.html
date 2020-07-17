@@ -12,36 +12,35 @@
 </head>
 <body>
 <div class="wrapper">
-<div class="container noheader nofooter">
-    <div class="login">
-        <div class="wrap d-flex">
-            <div class="login__logo">
-                <img src="http://via.placeholder.com/150x130" alt="">
+    <header class="header">
+        <div class="wrap">
+            <div class="header__inner header__txt d-flex">
+                <a href="" class="btn btn-close d-flex">닫기</a>
+                <div class="header__tit">비밀번호 설정</div>
             </div>
+        </div>
+    </header>
+<div class="container noheader nofooter">
+    <div class="login findPW">
+        <div class="wrap d-flex">
             <div class="login__form form">
                 <form action="">
                     <div class="form__row">
                         <div class="inp inp-input">
-                            <input type="text" placeholder="연락처">
-                        </div>
-                        <div class="inp inp-input">
-                            <input type="password" placeholder="비밀번호">
+                            <input type="text" placeholder="비밀번호">
                         </div>
                     </div>
                     <div class="form__row">
-                        <a href="" class="btn btn-link d-flex">로그인</a>
+                        <div class="inp inp-input">
+                            <input type="text" placeholder="비밀번호 확인">
+                        </div>
                     </div>
-
-                    <div class="formLink d-flex">
-                        <a href="">회원가입</a>
-                        <span class="bar">|</span>
-                        <a href="">비밀번호 찾기</a>
+                    <div class="form__row">
+                        <a href="" class="btn btn-link d-flex">비밀번호 설정</a>
                     </div>
                 </form>
             </div>
         </div>
-
-        <p class="login__copyRight">우물밖</p>
     </div>
 </div>
 @@include('./include/footer.html')

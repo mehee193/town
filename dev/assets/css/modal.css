@@ -174,3 +174,7 @@
     font-size: 10px;
     height: 32px;
   }
+
+  .modal__body > img {
+    width: 100%;
+  }

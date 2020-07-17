@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/jquery-ui/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="wrap">
+          <div class="header__inner header__txt d-flex">
+            <a href="" class="btn btn-close d-flex">닫기</a>
+            <div class="header__tit">세일정보 올리기</div>
+          </div>
+        </div>
+      </header>
+      <div class="container nofooter">
+        <div class="ad-register ad-register--modify">
+          <div class="section sec1">
+            <div class="section__body">
+              <div class="wrap">
+                <div class="form leaflet__form">
+                  <form action="">
+                    <div class="row">
+                        <div class="form__row form__row--date">
+                            <div class="form__tit">기간</div>
+                            <div class="inp inp-input d-flex">
+                            <div class="col">
+                                <input type="date" placeholder="" id="currentDate" />
+                            </div>
+                            <span class="hyphen">-</span>
+                            <div class="col">
+                                <input type="date" placeholder="" id="currentDate2" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">사진</div>
+                            <div class="inp inp-fileBox d-flex imgbox">
+                            <label for="imgInput">
+                                <input type="file" name="" id="imgInput" />
+                                <span></span>
+                                <img
+                                src="#"
+                                alt=""
+                                id="imgSection"
+                                class="imgSection"
+                                />
+                            </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">내용</div>
+                            <div class="inp inp-textarea">
+                                <textarea placeholder="입력해주세요"></textarea>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">원래가격</div>
+                            <div class="inp inp-input">
+                                <input type="" />
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__tit">판매가격</div>
+                            <div class="inp inp-input">
+                                <input type="" />
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+
+                    <button class="plusBtn">
+                        <img src="./assets/images/icon/plus-black.png" alt="">
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btnBox">
+            <div class="wrap">
+              <a href="" class="btn btn-link d-flex">업로드</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('./include/footer.html')
+
+      <script>
+        const mainImg = document.querySelector('#mainTitleimg');
+        mainImg.onchange = function () {
+          var fileList = mainImg.files;
+          var reader = new FileReader();
+          reader.readAsDataURL(fileList[0]);
+          reader.onload = function () {
+            console.log(reader.result);
+            document.querySelector('#mainTitleThumb').src = reader.result;
+          };
+        };
+      </script>
+    </div>
+  </body>
+</html>
